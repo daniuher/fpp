@@ -4,7 +4,7 @@
 A simple tool for relational file handling and management 
 
 # Planned
-- [ ] hasing
+- [x] hashing
 - [ ] local database setup
 - [ ] file tagging and grouping
 - [ ] provenance tracking
