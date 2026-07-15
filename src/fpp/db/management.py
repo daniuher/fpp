@@ -1,5 +1,5 @@
-from fg.core.metadata import get_metadata
-from fg.db.session import get_session
+from fpp.core.metadata import get_metadata
+from fpp.db.session import get_session
 
 
 def register_file(filepath: str) -> dict:

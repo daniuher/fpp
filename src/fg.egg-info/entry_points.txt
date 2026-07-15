@@ -1,2 +1,0 @@
-[console_scripts]
-fgp = fg.cli:cli

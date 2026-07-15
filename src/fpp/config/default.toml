@@ -2,7 +2,7 @@
 test_item = true
 
 [database]
-DB_PATH = "~/.fg/fg.db"
+DB_PATH = "~/.fpp/fpp.db"
 
 [hashing]
 HASH_ALGO = "sha256"

@@ -5,22 +5,22 @@ from importlib.resources import files
 
 
 def _default_config_path() -> Path:
-    return files("fg.config").joinpath("default.toml")
+    return files("fpp.config").joinpath("default.toml")
 
 
 def _xdg_config_path() -> Path:
     xdg = os.environ.get("XDG_CONFIG_HOME")
     base = Path(xdg) if xdg else Path.home() / ".config"
-    return base / "fg" / "config.toml"
+    return base / "fpp" / "config.toml"
 
 
 def _resolve_config_paths() -> list[Path]:
     paths = []
-    env_override = os.environ.get("FG_CONFIG")
+    env_override = os.environ.get("FPP_CONFIG")
     if env_override:
         paths.append(Path(env_override).expanduser())
 
-    local = Path.cwd() / "fg.toml"
+    local = Path.cwd() / "fpp.toml"
     if local.exists():
         paths.append(local)
 

@@ -1,7 +1,7 @@
 import sqlite3
 from contextlib import contextmanager
 from pathlib import Path
-from fg.config import CONFIG
+from fpp.config import CONFIG
 
 DB_PATH = Path(CONFIG["database"]["DB_PATH"]).expanduser()
 

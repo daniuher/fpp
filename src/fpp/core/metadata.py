@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 from pathlib import Path
-from fg.core.hashing import compute_hash
+from fpp.core.hashing import compute_hash
 
 
 def get_metadata(filepath: str | Path) -> dict:
